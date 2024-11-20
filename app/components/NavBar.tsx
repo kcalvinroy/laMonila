@@ -34,8 +34,8 @@ export default function NavBar() {
     <header className="mb-8 border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <Link href="/">
-          <h1 className="font-alexBrush text-4xl font-bold ">
-            La <span className="text-primary">Monila</span>
+          <h1 className="font-alexBrush text-7xl font-bold ">
+            La <span className="text-primary">Molina</span>
           </h1>
         </Link>
 
