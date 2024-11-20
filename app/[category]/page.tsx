@@ -23,12 +23,14 @@ async function getData(category: string) {
           "categoryName": category->name
       }`;
 
-  // const query = ;
+  
 
   const data = await client.fetch(query);
 
   return data;
 }
+
+export const dynamic = "force-dynamic";
 
 export default async function CategoryPage({
   params,
