@@ -4,6 +4,7 @@ import ImageGallery from "@/app/components/ImageGallery";
 import { Button } from "../../../components/ui/button";
 import { Star, Truck } from "lucide-react";
 import AddToCart from "@/app/components/AddToCart";
+import Checkout from "@/app/components/Checkout";
 
 async function getData(slug: string) {
   const query = `* [_type == "product" && slug.current == "${slug}"][0]{
@@ -85,7 +86,14 @@ export default async function ProductPage({
                 price={data.price}
                 price_id={data.price_id}
               />
-              <Button variant={"secondary"}>Checkout Now</Button>
+              <Checkout
+                currency="AED"
+                description={data.description}
+                image={data.images[0]}
+                name={data.name}
+                price={data.price}
+                price_id={data.price_id}
+              />
             </div>
 
             <p className="mt-12 txt-base text-gray-500 tracking-wide">
