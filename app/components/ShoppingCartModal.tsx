@@ -8,7 +8,6 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
-  SheetDescription,
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import { useShoppingCart } from "use-shopping-cart";
