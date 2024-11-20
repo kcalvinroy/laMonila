@@ -6,6 +6,8 @@ import { Star, Truck } from "lucide-react";
 import AddToCart from "@/app/components/AddToCart";
 import Checkout from "@/app/components/Checkout";
 
+
+
 async function getData(slug: string) {
   const query = `* [_type == "product" && slug.current == "${slug}"][0]{
     _id,
@@ -22,6 +24,8 @@ async function getData(slug: string) {
 
   return data;
 }
+
+export const dynamic = "force-dynamic";
 
 export default async function ProductPage({
   params,
