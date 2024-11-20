@@ -45,6 +45,9 @@ export default function ShoppingCartModal() {
         <SheetHeader>
           <SheetTitle>Shopping Cart</SheetTitle>
         </SheetHeader>
+        <p id="cart-description" className="sr-only">
+          Shopping cart containing your selected items
+        </p>
 
         <div className="h-full flex flex-col justify-between">
           <div className="mt-8 flex-1 overflow-y-auto">
