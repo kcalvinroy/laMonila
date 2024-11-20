@@ -1,7 +1,5 @@
 "use client";
 
-import { MouseEvent } from "react";
-
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
