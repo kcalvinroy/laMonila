@@ -8,6 +8,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import { useShoppingCart } from "use-shopping-cart";
@@ -43,6 +44,9 @@ export default function ShoppingCartModal() {
       >
         <SheetHeader>
           <SheetTitle>Shopping Cart</SheetTitle>
+          <SheetDescription>
+            View and manage your shopping cart
+          </SheetDescription>
         </SheetHeader>
         <p id="cart-description" className="sr-only">
           Shopping cart containing your selected items
