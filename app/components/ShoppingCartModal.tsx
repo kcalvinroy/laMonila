@@ -41,9 +41,7 @@ export default function ShoppingCartModal() {
       <SheetContent className="sm:max-w-lg w-[90vw]">
         <SheetHeader>
           <SheetTitle>Shopping Cart</SheetTitle>
-          <SheetDescription>
-            Make changes to your cart here. Click checkout when you're done.
-          </SheetDescription>
+          <SheetDescription>Click checkout when you're done.</SheetDescription>
         </SheetHeader>
 
         <div className="h-full flex flex-col justify-between">
