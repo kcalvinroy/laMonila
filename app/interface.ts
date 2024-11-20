@@ -1,3 +1,11 @@
+interface SanityImage {
+  _type: "image";
+  asset: {
+    _ref: string;
+    _type: "reference";
+  };
+}
+
 export interface simplifiedProduct {
   _id: string;
   name: string;
@@ -9,7 +17,7 @@ export interface simplifiedProduct {
 
 export interface fullProduct {
   _id: string;
-  images: any;
+  images: SanityImage[];
   price: number;
   name: string;
   description: string;
