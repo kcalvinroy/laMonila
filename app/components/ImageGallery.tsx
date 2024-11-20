@@ -4,14 +4,22 @@ import Image from "next/image";
 import { urlFor } from "../lib/sanity";
 import { useState } from "react";
 
+interface SanityImage {
+  _type: "image";
+  asset: {
+    _ref: string;
+    _type: "reference";
+  };
+}
+
 interface iAppProps {
-  images: any;
+  images: SanityImage[];
 }
 
 export default function ImageGallery({ images }: iAppProps) {
   const [bigImage, setBigImage] = useState(images[0]);
 
-  const handleSmallImageClick = (image: any) => {
+  const handleSmallImageClick = (image: SanityImage) => {
     setBigImage(image);
   };
 
