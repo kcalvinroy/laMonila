@@ -6,8 +6,6 @@ import { Star, Truck } from "lucide-react";
 import AddToCart from "@/app/components/AddToCart";
 import Checkout from "@/app/components/Checkout";
 
-
-
 async function getData(slug: string) {
   const query = `* [_type == "product" && slug.current == "${slug}"][0]{
     _id,
@@ -32,7 +30,7 @@ export default async function ProductPage({
 }: {
   params: { slug: string };
 }) {
-  const data: fullProduct = await getData(params.slug);
+  const data: fullProduct = await getData(await params.slug);
 
   return (
     <div className="bg-white">
