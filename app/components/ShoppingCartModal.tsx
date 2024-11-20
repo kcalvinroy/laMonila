@@ -31,10 +31,10 @@ export default function ShoppingCartModal() {
     try {
       const result = await redirectToCheckout();
       if (result?.error) {
-        console.log("result");
+        console.error("Checkout error:", result.error);
       }
     } catch (error) {
-      console.log(error);
+      console.error("Checkout error:", error);
     }
   }
 
