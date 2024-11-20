@@ -8,6 +8,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import { useShoppingCart } from "use-shopping-cart";
@@ -23,7 +24,9 @@ export default function ShoppingCartModal() {
     redirectToCheckout,
   } = useShoppingCart();
 
-  async function handleCheckoutClick(event: MouseEvent<HTMLButtonElement>) {
+  async function handleCheckoutClick(
+    event: React.MouseEvent<HTMLButtonElement>,
+  ) {
     event.preventDefault();
     try {
       const result = await redirectToCheckout();
@@ -40,6 +43,9 @@ export default function ShoppingCartModal() {
       <SheetContent className="sm:max-w-lg w-[90vw]">
         <SheetHeader>
           <SheetTitle>Shopping Cart</SheetTitle>
+          <SheetDescription>
+            Make changes to your cart here. Click checkout when you're done.
+          </SheetDescription>
         </SheetHeader>
 
         <div className="h-full flex flex-col justify-between">
