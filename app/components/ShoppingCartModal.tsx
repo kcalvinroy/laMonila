@@ -1,5 +1,7 @@
 "use client";
 
+import { MouseEvent } from "react";
+
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -22,26 +24,26 @@ export default function ShoppingCartModal() {
     redirectToCheckout,
   } = useShoppingCart();
 
-  async function handleCheckoutClick(
-    event: React.MouseEvent<HTMLButtonElement>,
-  ) {
+  async function handleCheckoutClick(event: MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     try {
       const result = await redirectToCheckout();
       if (result?.error) {
-        console.error("Checkout error:", result.error);
+        console.log("result");
       }
     } catch (error) {
-      console.error("Checkout error:", error);
+      console.log(error);
     }
   }
 
   return (
     <Sheet open={shouldDisplayCart} onOpenChange={() => handleCartClick()}>
-      <SheetContent className="sm:max-w-lg w-[90vw]">
+      <SheetContent
+        className="sm:max-w-lg w-[90vw]"
+        aria-describedby="cart-description"
+      >
         <SheetHeader>
           <SheetTitle>Shopping Cart</SheetTitle>
-          <SheetDescription>Click checkout when you're done.</SheetDescription>
         </SheetHeader>
 
         <div className="h-full flex flex-col justify-between">
