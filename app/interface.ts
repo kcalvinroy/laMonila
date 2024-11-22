@@ -6,14 +6,6 @@ interface SanityImage {
   };
 }
 
-interface SanityFile {
-  _type: "file";
-  asset: {
-    _ref: string;
-    _type: "reference";
-  };
-}
-
 export interface simplifiedProduct {
   _id: string;
   name: string;
@@ -47,5 +39,4 @@ export interface aboutSection {
   paragraph1: string;
   paragraph2: string;
   image: SanityImage;
-  file: SanityFile;
 }

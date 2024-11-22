@@ -1,7 +1,6 @@
 import { client, urlFor } from "../lib/sanity";
 import { category_service } from "../interface";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 async function getData() {

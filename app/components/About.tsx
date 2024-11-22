@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { client } from "../lib/sanity";
 import { urlFor } from "../lib/sanity";
-import Link from "next/link";
-import { ArrowBigDownIcon, BookDown } from "lucide-react";
+import { BookDown } from "lucide-react";
 import { aboutSection } from "../interface";
 
 async function getData() {
