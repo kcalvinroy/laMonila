@@ -34,13 +34,6 @@ export default async function Categories() {
           <h1 className="text-4xl font-bold tracking-tight text-black">
             Categories
           </h1>
-
-          {/* <Link href="/all" className="text-primary flex items-center gap-x-1">
-            See all
-            <span>
-              <ArrowRight />
-            </span>
-          </Link> */}
         </div>
         <div className="flex pt-4 justify-start items-center">
           <p className="text-xl flex items-center leading-relaxed text-gray-500 xl:text-lg">
@@ -57,7 +50,7 @@ export default async function Categories() {
                     <Image
                       src={
                         category.image == null
-                          ? "../../public/file.svg"
+                          ? "file.svg"
                           : urlFor(category.image).url()
                       }
                       alt={category.name}
