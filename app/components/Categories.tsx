@@ -36,12 +36,12 @@ export default async function Categories() {
             Categories
           </h1>
 
-          <Link href="/all" className="text-primary flex items-center gap-x-1">
+          {/* <Link href="/all" className="text-primary flex items-center gap-x-1">
             See all
             <span>
               <ArrowRight />
             </span>
-          </Link>
+          </Link> */}
         </div>
         <div className="flex pt-4 justify-start items-center">
           <p className="text-xl flex items-center leading-relaxed text-gray-500 xl:text-lg">
