@@ -8,5 +8,23 @@ export default {
       type: 'string',
       title: 'Category Name',
     },
+    {
+      name: 'slug',
+      type: 'slug',
+      title: 'Category Slug',
+      options: {
+        source: 'name',
+      },
+    },
+    {
+      name: 'description',
+      type: 'text',
+      title: 'category Description',
+    },
+    {
+      name: 'image',
+      type: 'image',
+      title: 'Category Image',
+    },
   ],
 }
