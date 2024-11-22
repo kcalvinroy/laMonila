@@ -38,7 +38,7 @@ export default async function Categories() {
         <div className="flex pt-4 justify-start items-center">
           <p className="text-xl flex items-center leading-relaxed text-gray-500 xl:text-lg">
             Besides the delicious chocolate products, La Molina offers different
-            services to cater to our customers' needs.
+            services to cater to our customers&apos; needs.
           </p>
         </div>
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
