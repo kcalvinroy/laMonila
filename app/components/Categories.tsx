@@ -54,7 +54,7 @@ export default async function Categories() {
                           : urlFor(category.image).url()
                       }
                       alt={category.name}
-                      className="w-full h-full object-cover object-center lg:h-full lg:w-full bg-white"
+                      className="w-full h-full object-cover object-center hover:scale-105 lg:h-full lg:w-full bg-white transition duration-300 ease-in-out"
                       width={300}
                       height={300}
                     />

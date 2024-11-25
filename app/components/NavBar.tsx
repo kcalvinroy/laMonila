@@ -34,7 +34,7 @@ export default function NavBar() {
     <header className="mb-8 border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <Link href="/">
-          <h1 className="font-alexBrush text-7xl font-bold ">
+          <h1 className="mt-2 font-alexBrush text-5xl font-bold ">
             La <span className="text-primary">Molina</span>
           </h1>
         </Link>
@@ -65,7 +65,7 @@ export default function NavBar() {
           <Button
             variant={"outline"}
             onClick={() => handleCartClick()}
-            className="flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-none"
+            className="flex flex-col gap-y-1.5 h-14 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-none"
           >
             <ShoppingBag />
             <span className="hidden text-xs font-semibold text-gray-500 sm:block">
