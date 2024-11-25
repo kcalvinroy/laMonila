@@ -1,8 +1,5 @@
 import { client } from "../lib/sanity";
 import { simplifiedProduct } from "../interface";
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 async function getData() {
   const query = `* [_type == 'product'][0...4] | order(_createdAt asc){
@@ -29,7 +26,7 @@ export default async function Footer() {
           <div className="max-w-[438px] mx-auto flex flex-col items-center justify-center text-center">
             <h2 className="text-2xl font-bold text-950 mb-4">Newsletter!</h2>
             <p className="text-lg text-gray-900 leading-relaxed">
-              Sign up for La Molina's newsletter to learn about the latest
+              Sign up for La Molina&apos; newsletter to learn about the latest
               products, promotions and exclusive offers.
             </p>
           </div>
@@ -57,7 +54,7 @@ export default async function Footer() {
             </form>
             <p className="text-sm text-center text-gray-500">
               By subscribing, you consent to receiving personalized
-              communications from us and agree to La Monila's{" "}
+              communications from us and agree to La Monila&apos;{" "}
               <a href="#" className="underline" target="_blank">
                 Privacy Policy.
               </a>
