@@ -6,8 +6,6 @@ import { ShoppingBag } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useShoppingCart } from "use-shopping-cart";
-import { client } from "../lib/sanity";
-import Head from "next/head";
 
 const links = [
   {
