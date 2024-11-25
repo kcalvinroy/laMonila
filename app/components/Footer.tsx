@@ -65,7 +65,7 @@ export default async function Footer() {
             </form>
             <p className="text-sm text-center text-gray-500">
               By subscribing, you consent to receiving personalized
-              communications from us and agree to La Monila&apos;{" "}
+              communications from us and agree to La Monila&apos;s{" "}
               <a href="#" className="underline" target="_blank">
                 Privacy Policy.
               </a>
