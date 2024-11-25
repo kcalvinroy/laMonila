@@ -17,7 +17,7 @@ async function getData() {
 }
 
 export default async function Footer() {
-  const data: simplifiedProduct[] = await getData();
+  // const data: simplifiedProduct[] = await getData();
 
   return (
     <footer className="page-footer" id="page-footer">
