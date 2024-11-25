@@ -40,3 +40,10 @@ export interface aboutSection {
   paragraph2: string;
   image: SanityImage;
 }
+
+export interface simplifiedContact {
+  email: string;
+  whatsapp: string;
+  instagram: string;
+  facebook: string;
+}
