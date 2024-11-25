@@ -141,15 +141,17 @@ export default async function Footer() {
                 )}
               </ul>
             </div>
-            <div className="flex w-full h-full items-center justify-center ">
-              <div className="items-center justify-center rounded-lg">
-                <img
-                  src="logo.png"
-                  alt="logo"
-                  className="max-w:md max-md:w-full object-cover object-center"
-                  width={200}
-                />
-              </div>
+            <div className="flex w-full h-full items-center justify-center hover:scale-105 transition duration-300 ease-in-out">
+              <a className=" flex items-center" href="#nav">
+                <div className="items-center justify-center rounded-lg">
+                  <img
+                    src="favicon.png"
+                    alt="logo"
+                    className="max-w:md max-md:w-full object-cover object-center"
+                    width={200}
+                  />
+                </div>
+              </a>
             </div>
             <div className="flex flex-col items-end">
               <div className="text-lg mb-4 font-semibold hidden md:block">

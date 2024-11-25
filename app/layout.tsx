@@ -12,7 +12,7 @@ const alexBrush = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "La Molina",
+  title: "LA MOLINA | CIOCCOLATO",
   description: "Creatively designed chocolate products",
 };
 
@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon2.png" />
+      </head>
       <body className={`${alexBrush.variable} antialiased`}>
         <CartProvider>
           <NavBar />
