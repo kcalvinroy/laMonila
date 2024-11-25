@@ -31,7 +31,7 @@ export default function NavBar() {
   const { handleCartClick } = useShoppingCart();
 
   return (
-    <header className="mb-8 border-b">
+    <header id="nav" className="mb-8 border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <Link href="/">
           <h1 className="mt-2 font-alexBrush text-5xl font-bold ">
