@@ -1,20 +1,20 @@
-import { client } from "../lib/sanity";
-import { simplifiedProduct } from "../interface";
+// import { client } from "../lib/sanity";
+// import { simplifiedProduct } from "../interface";
 
-async function getData() {
-  const query = `* [_type == 'product'][0...4] | order(_createdAt asc){
-    _id,
-      price,
-      name,
-      "slug":slug.current,
-      "categoryName":category->name,
-      "imageUrl":images[0].asset->url
-  }`;
+// async function getData() {
+//   const query = `* [_type == 'product'][0...4] | order(_createdAt asc){
+//     _id,
+//       price,
+//       name,
+//       "slug":slug.current,
+//       "categoryName":category->name,
+//       "imageUrl":images[0].asset->url
+//   }`;
 
-  const data = await client.fetch(query);
+//   const data = await client.fetch(query);
 
-  return data;
-}
+//   return data;
+// }
 
 export default async function Footer() {
   // const data: simplifiedProduct[] = await getData();
