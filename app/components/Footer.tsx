@@ -5,7 +5,6 @@ import Facebook from "@/icons/Facebook";
 
 import { client } from "../lib/sanity";
 import { simplifiedContact } from "../interface";
-import Image from "next/image";
 async function getData() {
   const query = `* [_type == 'contact'][0]{
     email,
