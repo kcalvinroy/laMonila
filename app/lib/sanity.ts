@@ -5,7 +5,7 @@ import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 export const client = createClient({
   projectId: "8gwf8ji3",
   dataset: "production",
-  apiVersion: "2022-03-07",
+  apiVersion: "2024-01-01",
   useCdn: true,
 });
 

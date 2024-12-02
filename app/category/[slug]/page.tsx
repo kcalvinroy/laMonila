@@ -16,7 +16,7 @@ async function getData(slug: string): Promise<simplifiedProduct[]> {
         "slug": slug.current,
         "categoryName": category->name
     }`
-          : `* [_type == "product" && category->slug == "${slug}"]{
+          : `* [_type == "product" && category->slug.current == "${slug}"]{
         _id,
           "imageUrl": images[0].asset->url,
             price,

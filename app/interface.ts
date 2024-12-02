@@ -34,6 +34,17 @@ export interface category_service {
   image: SanityImage;
 }
 
+export interface simplifiedCategory {
+  _id: string;
+  name: string;
+  slug: string;
+}
+
+export interface simplifiedService {
+  _id: string;
+  name: string;
+}
+
 export interface aboutSection {
   _id: string;
   paragraph1: string;

@@ -7,7 +7,7 @@ async function getData() {
   const query = `* [_type =='category']{
     _id,
       name,
-      slug,
+      "slug": slug.current,
       description,
       image,
   }`;
@@ -19,13 +19,6 @@ async function getData() {
 
 export default async function Categories() {
   const data: category_service[] = await getData();
-
-  function toSlug(str: string) {
-    return str
-      .toLowerCase()
-      .replace(/ /g, "-")
-      .replace(/[^\w-]+/g, "");
-  }
 
   return (
     <div className="bg-white" id="categories">
@@ -44,7 +37,7 @@ export default async function Categories() {
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data.map((category) => (
             <div key={category._id} className="group relative">
-              <Link href={`/category/${toSlug(category.name)}`}>
+              <Link href={`/category/${category.slug}`}>
                 <div className="aspect-square w-full drop-shadow-xl group-hover:shadow-primary/85 overflow-hidden rounded-lg bg-primary group-hover:scale-105 lg:h-80 transition duration-300 ease-in-out group-hover:shadow-2xl">
                   <div className="w-full  h-3/4">
                     <Image
