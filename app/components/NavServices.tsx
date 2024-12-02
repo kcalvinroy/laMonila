@@ -26,7 +26,7 @@ export default function NavServices({ services }: NavServicesProps) {
       onMouseLeave={handleMouseLeave}
     >
       <Link
-        href="/services/all"
+        href="/service/all"
         className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary"
       >
         Services
@@ -41,7 +41,7 @@ export default function NavServices({ services }: NavServicesProps) {
           {services.map((service) => (
             <a
               key={service._id}
-              href={`/services/${service.name}`}
+              href={`/service/${service.name}`}
               className="block px-4 py-2 text-md text-gray-600 hover:text-primary"
             >
               {service.name}
